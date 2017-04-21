@@ -18,8 +18,8 @@ try:
     	)
 
      # this is where the fun actually starts :)
-     for tweet in ts.search_tweets_iterable(tso):
-     	print( '@%s tweeted: %s' % ( tweet['user']['screen_name'], tweet['text'] ) )
+        for tweet in ts.search_tweets_iterable(tso):
+     	   print( '@%s tweeted: %s' % ( tweet['user']['screen_name'], tweet['text'] ) )
 
 except TwitterSearchException as e: # take care of all those ugly errors if there are some
 print(e)
